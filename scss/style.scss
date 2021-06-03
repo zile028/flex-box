@@ -6,3 +6,30 @@
 
 /*---------------------------------*/
 /* header */
+header {
+  background-image: linear-gradient(rgba($gray, 0.5), rgba($white, 0.99)),
+    url(../img/header.jpg);
+  @include bgBasic;
+  height: 65vh;
+  @include flex(center, center, column);
+  text-align: center;
+  border-top: 10px solid $blue;
+  h1 {
+    font-size: 6rem;
+    color: $white;
+    text-shadow: 2px 2px $gray;
+  }
+  h4 {
+    font-size: 1.7rem;
+    font-weight: 400;
+  }
+}
+
+/* header */
+/* header */
+/* header */
+/* header */
+/* header */
+/* header */
+/* header */
+/* header */

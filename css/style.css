@@ -57,4 +57,49 @@ img {
 /*------- GLOBAL -------*/
 /*---------------------------------*/
 /* header */
+header {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(68, 68, 68, 0.5)), to(rgba(255, 255, 255, 0.99))), url(../img/header.jpg);
+  background-image: linear-gradient(rgba(68, 68, 68, 0.5), rgba(255, 255, 255, 0.99)), url(../img/header.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 65vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  border-top: 10px solid #4f9ec5;
+}
+
+header h1 {
+  font-size: 6rem;
+  color: #fff;
+  text-shadow: 2px 2px #444;
+}
+
+header h4 {
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+
+/* header */
+/* header */
+/* header */
+/* header */
+/* header */
+/* header */
+/* header */
+/* header */
 /*# sourceMappingURL=style.css.map */
