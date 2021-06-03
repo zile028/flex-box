@@ -48,15 +48,16 @@ button {
     content: "";
     top: 0;
     right: 100%;
+    bottom: 100%;
+    left: 0;
     background-color: rgba($gray, 0.5);
-    height: 100%;
-    width: 100%;
     position: absolute;
     transition: $transition;
   }
   &:hover {
     &::after {
       right: 0;
+      bottom: 0;
     }
   }
 }
