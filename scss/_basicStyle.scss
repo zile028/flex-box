@@ -37,6 +37,7 @@ a {
 }
 img {
   display: block;
+  width: 100%;
 }
 .container {
   width: $width;
@@ -44,4 +45,7 @@ img {
   @media (max-width: 769px) {
     width: 90%;
   }
+}
+.py {
+  padding: $py;
 }

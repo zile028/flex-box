@@ -1,16 +1,72 @@
 @import "variables";
 @import "basicStyle";
 @import "mixins";
+body {
+  position: relative;
+  &::after {
+    // content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../image.png);
+    background-position: center top;
+    background-size: 100% auto;
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+  }
+}
 
 /*------- GLOBAL -------*/
-
+hr {
+  border: none;
+  background-color: $lightgray;
+  height: 1px;
+  width: 50%;
+  margin: 30px auto;
+}
+i {
+  color: $blue;
+  font-size: 2.5rem;
+}
+button {
+  border: none;
+  background-color: $blue;
+  color: $white;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 0.9rem;
+  padding: 0.5em 2em;
+  border-radius: 1.5em 1.5em 1.5em 0;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  margin-top: 20px;
+  &:after {
+    content: "";
+    top: 0;
+    right: 100%;
+    background-color: rgba($gray, 0.5);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: $transition;
+  }
+  &:hover {
+    &::after {
+      right: 0;
+    }
+  }
+}
 /*---------------------------------*/
 /* header */
 header {
   background-image: linear-gradient(rgba($gray, 0.5), rgba($white, 0.99)),
     url(../img/header.jpg);
   @include bgBasic;
-  height: 65vh;
+  height: 70vh;
   @include flex(center, center, column);
   text-align: center;
   border-top: 10px solid $blue;
@@ -20,14 +76,80 @@ header {
     text-shadow: 2px 2px $gray;
   }
   h4 {
-    font-size: 1.7rem;
+    font-size: 2rem;
     font-weight: 400;
   }
 }
 
-/* header */
-/* header */
-/* header */
+/* welcome */
+.welcome {
+  text-align: center;
+  h2 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    font-weight: 400;
+  }
+  p {
+    font-weight: 400;
+    font-size: 1.1rem;
+  }
+  article {
+    @include flex;
+    div {
+      flex: 0 0 32%;
+      h5 {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+/* blog */
+.blog {
+  background-color: $lightgray;
+  article {
+    @include flex;
+    .post {
+      flex: 0 0 47%;
+      img {
+        border-radius: 50px 50px 50px 0;
+        box-shadow: 3px 3px $blue;
+      }
+      h5 {
+        font-size: 1.5rem;
+        margin: 10px 0 0;
+        font-weight: 400;
+      }
+      p {
+        font-weight: 400;
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
+
+/* footer */
+footer {
+  background-color: $gray;
+  article {
+    color: $white;
+    text-align: center;
+    h3 {
+      font-size: 1.6rem;
+    }
+    p {
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+    i {
+      font-size: 1.6rem;
+      margin: 0 5px;
+    }
+    hr {
+      background-color: rgba($lightgray, 0.1);
+    }
+  }
+}
 /* header */
 /* header */
 /* header */
