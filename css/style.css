@@ -59,6 +59,12 @@ img {
   padding: 100px 0;
 }
 
+@media (max-width: 769px) {
+  .py {
+    padding: 50px 0;
+  }
+}
+
 body {
   position: relative;
 }
@@ -172,6 +178,12 @@ header h4 {
   font-weight: 400;
 }
 
+@media (max-width: 769px) {
+  .welcome h2 {
+    line-height: 1.5;
+  }
+}
+
 .welcome p {
   font-weight: 400;
   font-size: 1.1rem;
@@ -199,6 +211,19 @@ header h4 {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 32%;
           flex: 0 0 32%;
+}
+
+@media (max-width: 769px) {
+  .welcome article div {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    margin-bottom: 30px;
+  }
+}
+
+.welcome article div:last-child {
+  margin-bottom: 0;
 }
 
 .welcome article div h5 {
@@ -232,6 +257,19 @@ header h4 {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 47%;
           flex: 0 0 47%;
+}
+
+@media (max-width: 769px) {
+  .blog article .post {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    margin-bottom: 30px;
+  }
+}
+
+.blog article .post:last-child {
+  margin-bottom: 0;
 }
 
 .blog article .post img {
@@ -273,6 +311,12 @@ footer article p {
 footer article i {
   font-size: 1.6rem;
   margin: 0 5px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+footer article i:hover {
+  color: rgba(238, 238, 238, 0.8);
 }
 
 footer article hr {
